@@ -12,7 +12,7 @@ import pandas
 
 my_fruit_list = pandas.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
 # Let's put a pick list here so they can pick the fruit they want to include
-steamlit.multiselect("Pick some fruiits:", list(my_fruit_list.index))
+steamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 #display the table on the page
-streamlist.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_list)
